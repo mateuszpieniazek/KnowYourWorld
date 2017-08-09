@@ -1,0 +1,209 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+body {
+    // background-color: lightblue;
+    background-image: url("../img/sky.jpg");
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .row {
+      margin: 5px 0;
+    &:before,
+    &:after {
+      content: " ";
+      clear: both;
+      display: block;
+    }
+
+    [class*="col-"] {
+      float: left;
+      min-height: 1px;
+
+    }
+
+    @for $i from 1 through 12 {
+      .col-#{$i} {
+         width: 100%;
+         margin: 0 0 20px;
+         padding: 0 5px;
+        @media screen and (min-width: 640px) {
+        width: (100%/12) * $i;
+        }
+      }
+    }
+  }
+}
+
+//header
+.header{
+    height: 100px;
+    width: auto;
+    // border: 1px solid white;
+}
+
+.nameheader {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+}
+
+//introduction
+.introduction {
+    text-align: center;
+    h1 {
+        font-size: 48px;
+        color:white;
+    }
+}
+
+
+//typename
+
+.typename {
+    text-align: center;
+}
+
+.button {
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 20px;
+    background: #3498db;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 20px 10px 20px;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+// //test
+// .title{
+//     height: 70px;
+//     width: 100%;
+//     border: 1px solid black;;
+// }
+
+
+//main
+.main-empty {
+    height: 400px;
+    width: 100%;
+    border: 1px solid white;
+}
+
+.main-map{
+    height: 400px;
+    width: 100%;
+    background: pink;
+    border: 1px solid white;
+}
+
+.main-pic{
+    height: 400px;
+    width: 100%;
+    border: 1px solid white;
+    background-position: center;
+}
+
+//next round
+.next-round {
+    text-align: center;
+}
+
+//results
+
+// .small-box {
+//     height: 30px;
+//     margin-bottom: 5px;
+//     width: 100%;
+//     border: 1px solid black;
+// }
+
+
+//score
+#score div {
+  width: 10em;
+  height: 3em;
+  text-align: center;
+  background-color: #3498db;
+  border: 1px solid #3498db;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px 1px #ffffff;
+  opacity: 0.8;
+}
+
+//wall of fame
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td{
+    border: 1px solid white;
+    height: 100%;
+    background: white;
+    opacity: 0.8;
+    text-align: center;
+}
+
+tr:first-child td {
+    background: #3498db;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+//footer
+
+.footer{
+    width: auto;
+    height: 100px;
+    // border: 1px solid black;
+}
+.footer-layout {
+    display:flex;
+    height: 100px;
+}
+
+.copyright{
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+}
+
+.footer-logo{
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+//
+// .footerLayout {
+//     display:flex;
+//     height: 100px;
+// }
+//
+// [class*="footer-"]{
+//     display: flex;
+//     align-items: center;
+// }

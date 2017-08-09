@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+    </style>
+    <title>KnowYourWorld</title>
+</head>
+<body>
+<div class="container">
+<!--  header -->
+    <div class="row">
+        <div class="col-12">
+            <footer class= "header">
+                <div class="footer-layout">
+                    <a href="" class="nameheader">
+                        Know Your World
+                    </a>
+                    <div class ="footer-logo">
+                        <p> Share:</p>
+                        <img src="img/iconfb.png"/>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+<!--  introduction-->
+    <div class="row">
+        <div class="col-12">
+            <div class="introduction">
+                <h1 class="h1">know your world!</h1></br>
+                <h2>Check your knowledge about the most popular places in the world</h2>
+                <h2>Compare your results with friends</h2>
+            </div>
+        </div>
+    </div>
+
+<!--  typename-->
+    <div class="row">
+        <div class="col-12">
+            <div class="typename">
+                <h2>Ready to play?</h2>
+                <label>
+                    Type your name:
+                    <input type="text" id="name">
+                </label>
+                <label>
+                    ...and your City
+                    <input type="text" id="city">
+                </label>
+                <a class="button" id="Btn">Click me and play!</a>
+            </div>
+        </div>
+    </div>
+
+<!--starter
+        <div class="row">
+            <div class="col-6">
+                <div class="starter-text">
+                    <h1>Ready to go...</h1>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="starter-counter">
+                    start!
+                </div>
+            </div>
+        </div>-->
+
+<!-- main-->
+        <div class="row">
+            <div class="col-6">
+                <div class="main-pic">
+                PICTURE
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="main-map">
+                    <div id="map" style="width: 100%; height: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- next round-->
+        <div class="row">
+            <div class="col-12">
+                <div class="next-round">
+                    <button class = "button" id="click">next round</button>
+                </div>
+            </div>
+        </div>
+
+<!-- results-->
+        <div class="row">
+            <div class="col-5">
+                <div>
+                     <div class="singleScore button">
+                        SCORE: <strong>0</strong>
+                     </div>
+                </div>
+                <div>
+                     <div class="totalScore button">
+                        TOTAL SCORE: <strong>0</strong>
+                     </div>
+                </div>
+            </div>
+            <div class="col-2">
+
+            </div>
+            <div class="col-5">
+                    <table id="players">
+                        <tr>
+                            <td>name</td>
+                            <td>city</td>
+                            <td>total score</td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+
+<!-- footer-->
+        <div class="row">
+            <div class="col-12">
+                <footer class= "footer">
+                    <div class="footer-layout">
+                        <p class="copyright">Copyright 2017 | All rights Reserved. - Know Your World</p>
+                        <div class ="footer-logo">
+                            <img src="img/iconfb.png"/>
+                            <img src="img/icontwitter.png"/>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+</div>
+
+    <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPD4m7ciBx6ZYDYLpA51R3I-dbVVKqm9A&libraries=geometry&sensor=true_or_false">
+    </script>
+    <script src="dist/bundle.js"></script>
+</body>
+</html>
